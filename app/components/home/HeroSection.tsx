@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid items-center gap-16 md:grid-cols-2">
 
-          {/* IMAGE — mobile এ উপরে */}
+
           <div className="relative flex justify-center order-1 md:order-2">
             {/* Decorative shapes */}
             <div className="absolute -z-10 flex gap-6">
@@ -27,7 +27,7 @@ export default function HeroSection() {
             />
           </div>
 
-          {/* TEXT — mobile এ নিচে */}
+        
           <div className="order-2 md:order-1">
             <span className="inline-block rounded-full bg-sky-100 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600">
               Kids Education

@@ -1,4 +1,5 @@
 
+kid school
 
 ```bash
 npm run dev

@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <Image
-                src="/logo.png"
+                src="/assets/logo.png"
                 alt="Kids Education"
                 width={44}
                 height={44}

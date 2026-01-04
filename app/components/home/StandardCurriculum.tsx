@@ -1,5 +1,7 @@
 'use client';
 
+import { useRef } from 'react';
+import Slider, { Settings } from 'react-slick';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
@@ -44,9 +46,34 @@ const curriculumData: CurriculumItem[] = [
     readMoreColor: 'text-red-500',
     icon: '/assets/middle.png',
   },
+  {
+    id: 3,
+    title: 'Middle',
+    age: '(10–16 Years)',
+    description:
+      'Empower students with advanced knowledge and life skills, preparing them for future academic and personal success.',
+    bg: 'bg-purple-100',
+    readMoreColor: 'text-red-500',
+    icon: '/assets/middle.png',
+  },
 ];
 
 export default function StandardCurriculum() {
+  const sliderRef = useRef<Slider | null>(null);
+
+  const settings: Settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false, // we’ll keep your custom arrows
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } },
+    ],
+  };
+
   return (
     <section className="py-20">
       <div className="max-w-6xl mx-auto px-4">
@@ -55,54 +82,54 @@ export default function StandardCurriculum() {
           Standard Curriculum
         </h2>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {curriculumData.map((item) => (
-            <div
-              key={item.id}
-              className={`${item.bg} rounded-2xl shadow-sm p-8 text-center transition-transform duration-300 hover:-translate-y-1`}
-            >
-              {/* Icon */}
-              <div className="flex justify-center mb-6">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={80}
-                  height={80}
-                />
+        {/* Slider */}
+        <div className="relative">
+          <Slider ref={sliderRef} {...settings}>
+            {curriculumData.map((item) => (
+              <div key={item.id} className="px-3">
+                <div
+                  className={`${item.bg} rounded-2xl shadow-sm p-8 text-center transition-transform duration-300 hover:-translate-y-1`}
+                >
+                  <div className="flex justify-center mb-6">
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={80}
+                      height={80}
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-1">
+                    {item.title}{' '}
+                    <span className="font-medium text-gray-700">{item.age}</span>
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed mt-4 mb-6">
+                    {item.description}
+                  </p>
+                  <button
+                    className={`text-sm font-medium ${item.readMoreColor} hover:underline underline-offset-4`}
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
+            ))}
+          </Slider>
 
-              {/* Title */}
-              <h3 className="text-xl font-semibold mb-1">
-                {item.title}{' '}
-                <span className="font-medium text-gray-700">
-                  {item.age}
-                </span>
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm text-gray-600 leading-relaxed mt-4 mb-6">
-                {item.description}
-              </p>
-
-              {/* Read More */}
-              <button
-                className={`text-sm font-medium ${item.readMoreColor} hover:underline underline-offset-4`}
-              >
-                Read More
-              </button>
-            </div>
-          ))}
-        </div>
-
-        {/* Navigation Buttons */}
-        <div className="flex justify-center gap-4 mt-12">
-          <button className="w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center text-white hover:bg-orange-500 transition">
-            <ArrowLeft size={20} />
-          </button>
-          <button className="w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center text-white hover:bg-orange-500 transition">
-            <ArrowRight size={20} />
-          </button>
+          {/* Navigation Buttons */}
+          <div className="flex justify-center gap-4 mt-12">
+            <button
+              onClick={() => sliderRef.current?.slickPrev()}
+              className="w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center text-white hover:bg-orange-500 transition"
+            >
+              <ArrowLeft size={20} />
+            </button>
+            <button
+              onClick={() => sliderRef.current?.slickNext()}
+              className="w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center text-white hover:bg-orange-500 transition"
+            >
+              <ArrowRight size={20} />
+            </button>
+          </div>
         </div>
       </div>
     </section>

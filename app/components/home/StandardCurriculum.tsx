@@ -46,15 +46,15 @@ const curriculumData: CurriculumItem[] = [
     readMoreColor: 'text-red-500',
     icon: '/assets/middle.png',
   },
-  {
-    id: 3,
-    title: 'Middle',
-    age: '(10–16 Years)',
+ {
+    id: 4,
+    title: 'High School',
+    age: '(14–18 Years)',
     description:
-      'Empower students with advanced knowledge and life skills, preparing them for future academic and personal success.',
-    bg: 'bg-purple-100',
-    readMoreColor: 'text-red-500',
-    icon: '/assets/middle.png',
+      'Prepare students for higher education and careers through advanced academics, leadership, and personal development.',
+    bg: 'bg-rose-100',
+    readMoreColor: 'text-indigo-600',
+    icon: '/assets/high-school.png',
   },
 ];
 

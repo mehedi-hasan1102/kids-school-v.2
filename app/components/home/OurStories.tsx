@@ -21,7 +21,7 @@ const stories: Story[] = [
       'Engaging children in creative activities to enhance their learning experience and foster a love for education.',
     date: 'Nov 19, 2024',
     dateColor: 'bg-rose-400',
-    image: '/images/story-1.jpg',
+    image: '/assets/story-1.png',
     featured: true,
   },
   {

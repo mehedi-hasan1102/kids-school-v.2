@@ -36,7 +36,7 @@ const stories: Story[] = [
     title: 'Summer math & literacy centres for kids',
     date: 'Jan 03, 2025',
     dateColor: 'bg-sky-400',
-    image: '/images/story-3.jpg',
+    image: '/assets/story-3.png',
   },
   {
     id: 4,

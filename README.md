@@ -9,6 +9,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-kids school
-It will be school project 

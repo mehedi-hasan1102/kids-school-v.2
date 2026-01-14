@@ -11,3 +11,4 @@ bun dev
 ```
 
 kids school
+It will be school project 

@@ -11,5 +11,4 @@ bun dev
 ```
 
 
-test read me
 

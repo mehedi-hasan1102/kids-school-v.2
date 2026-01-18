@@ -1,4 +1,4 @@
-# Kids School V2
+# Kids School
 
 **⚠️ THIS PROJECT IS UNDER CONSTRUCTION ⚠️**
 

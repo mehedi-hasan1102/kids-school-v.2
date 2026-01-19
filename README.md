@@ -1,4 +1,4 @@
-# Kids School New Version
+# Kids School Next js version
 
 **⚠️ THIS PROJECT IS UNDER CONSTRUCTION ⚠️**
 

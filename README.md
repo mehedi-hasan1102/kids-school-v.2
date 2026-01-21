@@ -1,4 +1,4 @@
-# Kids School - next js  
+# Kids School
 
 **⚠️ THIS PROJECT IS UNDER CONSTRUCTION ⚠️**
 

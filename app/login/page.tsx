@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LoginForm from '@/app/components/auth/LoginForm';
 
 export const metadata: Metadata = {
-  title: 'Login | Kids School',
+  title: 'Login | Apexiums School',
   description: 'Role-based login for students, teachers, and administrators.',
 };
 

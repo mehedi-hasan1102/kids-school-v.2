@@ -21,12 +21,14 @@ body {
   font-family: "Nunito Sans", "Segoe UI", "Trebuchet MS", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
-  color: var(--title);
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+    color: var(--title);
+  }
 }
 
 ::selection {

@@ -63,7 +63,7 @@ export default function LoginForm() {
             value={identifier}
             onChange={(event) => setIdentifier(event.target.value)}
             className="form-control"
-            placeholder="student@kidsschool.edu"
+            placeholder="student@apexiumsschool.edu"
             required
           />
         </label>

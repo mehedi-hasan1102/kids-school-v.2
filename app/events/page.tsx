@@ -3,8 +3,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import { EVENTS_NEWS } from '@/app/lib/school-data';
 
 export const metadata: Metadata = {
-  title: 'Events & News | Kids School',
-  description: 'Latest school events, notices, and campus updates from Kids School.',
+  title: 'Events & News | Apexiums School',
+  description: 'Latest school events, notices, and campus updates from Apexiums School.',
 };
 
 export default function EventsPage() {

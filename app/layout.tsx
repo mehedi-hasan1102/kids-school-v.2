@@ -6,20 +6,20 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export const metadata: Metadata = {
-  title: 'Kids School | Official Website',
+  title: 'Apexiums School | Official Website',
   description:
-    'Kids School public website and multi-role dashboards for students, teachers, and admin.',
-  metadataBase: new URL('https://kidsschool.edu'),
+    'Apexiums School public website and multi-role dashboards for students, teachers, and admin.',
+  metadataBase: new URL('https://apexiumsschool.edu'),
   openGraph: {
-    title: 'Kids School | Official Website',
+    title: 'Apexiums School | Official Website',
     description:
-      'Official website for Kids School with admissions, academics, events, and role-based portals.',
+      'Official website for Apexiums School with admissions, academics, events, and role-based portals.',
     type: 'website',
-    url: 'https://kidsschool.edu',
+    url: 'https://apexiumsschool.edu',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kids School',
+    title: 'Apexiums School',
     description:
       'Student-first school website with admissions, events, and secure role-based dashboards.',
   },

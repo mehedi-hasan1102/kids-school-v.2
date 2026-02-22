@@ -4,8 +4,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import { FACULTY_MEMBERS } from '@/app/lib/school-data';
 
 export const metadata: Metadata = {
-  title: 'About Us | Kids School',
-  description: 'Learn about Kids School mission, vision, leadership, and principal message.',
+  title: 'About Us | Apexiums School',
+  description: 'Learn about Apexiums School mission, vision, leadership, and principal message.',
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <PageIntro
         eyebrow="About Us"
         title="A school focused on academic excellence and character"
-        description="Kids School combines modern teaching methods, disciplined learning habits, and student wellbeing support to help each child grow with confidence."
+        description="Apexiums School combines modern teaching methods, disciplined learning habits, and student wellbeing support to help each child grow with confidence."
       />
 
       <section className="page-wrap section-grid pb-14 lg:grid-cols-2">
@@ -39,7 +39,7 @@ export default function AboutPage() {
         <article className="rounded-2xl bg-[#0c2237] p-8 text-white shadow-lg">
           <h2 className="text-2xl font-bold text-white">Principal&apos;s Message</h2>
           <p className="mt-4 max-w-4xl text-sm leading-relaxed text-white/90">
-            Every child has unique potential. At Kids School, we create a learning environment where students feel safe,
+            Every child has unique potential. At Apexiums School, we create a learning environment where students feel safe,
             respected, and motivated to do their best. We continuously invest in teacher development, technology-enabled
             classrooms, and student support programs to ensure meaningful outcomes.
           </p>

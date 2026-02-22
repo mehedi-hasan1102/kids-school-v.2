@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://kidsschool.edu';
+const BASE_URL = 'https://apexiumsschool.edu';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

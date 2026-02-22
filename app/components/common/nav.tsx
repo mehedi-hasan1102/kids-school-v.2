@@ -38,11 +38,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200/80 bg-white/90 backdrop-blur-lg">
       <nav className="page-wrap flex items-center justify-between py-4" aria-label="Main navigation">
         <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
-          <Image src="/assets/logo.png" alt="Kids School" width={38} height={38} priority />
-          <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-teal-700">Kids School</p>
+          <Image src="/assets/logo.png" alt="Apexiums School" width={112} height={38} priority />
+          {/* <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-teal-700">Apexiums School</p>
             <p className="text-sm font-semibold text-neutral-800">Official Portal</p>
-          </div>
+          </div> */}
         </Link>
 
         <ul className="hidden items-center gap-2 lg:flex">

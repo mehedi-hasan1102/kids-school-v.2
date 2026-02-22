@@ -4,8 +4,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import { FEE_STRUCTURE } from '@/app/lib/school-data';
 
 export const metadata: Metadata = {
-  title: 'Admissions | Kids School',
-  description: 'Admission process, requirements, and fee structure for Kids School session 2026.',
+  title: 'Admissions | Apexiums School',
+  description: 'Admission process, requirements, and fee structure for Apexiums School session 2026.',
 };
 
 const ADMISSION_STEPS = [

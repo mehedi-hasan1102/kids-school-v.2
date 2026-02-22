@@ -1,4 +1,4 @@
-# Kids School
+# Apexiums School
 
 Public-facing school website with role-based dashboards for Students, Teachers, and Admin.
 
@@ -79,6 +79,6 @@ npm run dev
 
 ## Demo Login Credentials
 
-- Student: `student@kidsschool.edu` / `student123`
-- Teacher: `teacher@kidsschool.edu` / `teacher123`
-- Admin: `admin@kidsschool.edu` / `admin123`
+- Student: `student@apexiumsschool.edu` / `student123`
+- Teacher: `teacher@apexiumsschool.edu` / `teacher123`
+- Admin: `admin@apexiumsschool.edu` / `admin123`

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import DashboardShell from '@/app/components/dashboard/DashboardShell';
 
 export const metadata: Metadata = {
-  title: 'Teacher Dashboard | Kids School',
+  title: 'Teacher Dashboard | Apexiums School',
 };
 
 const classes = ['Grade 7 - Section A', 'Grade 8 - Section B', 'Grade 9 - Section C'];

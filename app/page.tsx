@@ -14,9 +14,9 @@ const KEY_STATS = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Kids School | Home',
+  title: 'Apexiums School | Home',
   description:
-    'Official Kids School website with admissions, academics, events, faculty information, and role-based portals.',
+    'Official Apexiums School website with admissions, academics, events, faculty information, and role-based portals.',
 };
 
 export default function Home() {

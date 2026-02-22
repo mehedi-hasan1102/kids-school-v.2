@@ -3,8 +3,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import { ACADEMIC_PROGRAMS } from '@/app/lib/school-data';
 
 export const metadata: Metadata = {
-  title: 'Academics | Kids School',
-  description: 'Explore classes offered, curriculum design, and academic support at Kids School.',
+  title: 'Academics | Apexiums School',
+  description: 'Explore classes offered, curriculum design, and academic support at Apexiums School.',
 };
 
 export default function AcademicsPage() {

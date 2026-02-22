@@ -3,8 +3,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import ContactContent from '@/app/components/contact/ContactContent';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Kids School',
-  description: 'Contact the Kids School admissions and administration office.',
+  title: 'Contact Us | Apexiums School',
+  description: 'Contact the Apexiums School admissions and administration office.',
 };
 
 export default function ContactPage() {

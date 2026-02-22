@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import PageIntro from '@/app/components/common/page-intro';
 
 export const metadata: Metadata = {
-  title: 'Facilities | Kids School',
-  description: 'Explore classroom, lab, library, sports, and safety facilities at Kids School.',
+  title: 'Facilities | Apexiums School',
+  description: 'Explore classroom, lab, library, sports, and safety facilities at Apexiums School.',
 };
 
 const FACILITIES = [

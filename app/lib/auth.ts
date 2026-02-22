@@ -17,19 +17,19 @@ export const DEMO_USERS: DemoUser[] = [
   {
     role: "student",
     name: "Ayesha Rahman",
-    identifier: "student@kidsschool.edu",
+    identifier: "student@apexiumsschool.edu",
     password: "student123",
   },
   {
     role: "teacher",
     name: "Mr. Arif Hasan",
-    identifier: "teacher@kidsschool.edu",
+    identifier: "teacher@apexiumsschool.edu",
     password: "teacher123",
   },
   {
     role: "admin",
     name: "School Admin",
-    identifier: "admin@kidsschool.edu",
+    identifier: "admin@apexiumsschool.edu",
     password: "admin123",
   },
 ];
@@ -40,7 +40,7 @@ export const ROLE_LABEL: Record<UserRole, string> = {
   admin: "Admin",
 };
 
-export const AUTH_STORAGE_KEY = "kidsSchoolUser";
+export const AUTH_STORAGE_KEY = "apexiumsSchoolUser";
 
 export function getDashboardPath(role: UserRole): string {
   return `/dashboard/${role}`;

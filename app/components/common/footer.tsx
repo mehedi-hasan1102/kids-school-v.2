@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="mt-10 bg-[#07131f] text-white">
       <div className="page-wrap grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <h3 className="text-2xl font-bold text-white">Kids School</h3>
+          <h3 className="text-2xl font-bold !text-white">Apexiums School</h3>
           <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/80">
             We deliver structured academics, strong values, and a safe learning environment for students from
             early years through secondary grades.
@@ -61,13 +61,13 @@ export default function Footer() {
           <h4 className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">Contact</h4>
           <p className="mt-3 text-sm text-white/85">123 Learning Avenue, Greenfield, NY 11201</p>
           <p className="mt-1 text-sm text-white/85">+1 (212) 555-0168</p>
-          <p className="mt-1 text-sm text-white/85">info@kidsschool.edu</p>
+          <p className="mt-1 text-sm text-white/85">info@apexiumsschool.edu</p>
         </div>
       </div>
 
       <div className="border-t border-white/15">
         <div className="page-wrap flex flex-wrap items-center justify-between gap-2 py-4 text-xs text-white/70">
-          <p>© 2026 Kids School. All rights reserved.</p>
+          <p>© 2026 Apexiums School. All rights reserved.</p>
           <p>Admissions Office Hours: Sun-Thu, 8:00 AM-4:00 PM</p>
         </div>
       </div>

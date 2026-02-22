@@ -48,7 +48,7 @@ export default function ContactContent() {
         <div className="mt-4 space-y-2 text-sm text-neutral-700">
           <p><span className="font-semibold">Address:</span> 123 Learning Avenue, Greenfield, NY 11201, USA</p>
           <p><span className="font-semibold">Phone:</span> +1 (212) 555-0168</p>
-          <p><span className="font-semibold">Email:</span> info@kidsschool.edu</p>
+          <p><span className="font-semibold">Email:</span> info@apexiumsschool.edu</p>
           <p><span className="font-semibold">Office Hours:</span> Sunday-Thursday, 8:00 AM-4:00 PM</p>
         </div>
 

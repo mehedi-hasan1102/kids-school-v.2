@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import DashboardShell from '@/app/components/dashboard/DashboardShell';
 
 export const metadata: Metadata = {
-  title: 'Student Dashboard | Kids School',
+  title: 'Student Dashboard | Apexiums School',
 };
 
 const attendance = [

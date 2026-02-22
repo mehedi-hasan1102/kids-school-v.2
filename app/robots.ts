@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://kidsschool.edu/sitemap.xml',
+    sitemap: 'https://apexiumsschool.edu/sitemap.xml',
   };
 }

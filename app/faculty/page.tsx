@@ -3,8 +3,8 @@ import PageIntro from '@/app/components/common/page-intro';
 import { FACULTY_MEMBERS } from '@/app/lib/school-data';
 
 export const metadata: Metadata = {
-  title: 'Faculty | Kids School',
-  description: 'Meet the experienced faculty team guiding students at Kids School.',
+  title: 'Faculty | Apexiums School',
+  description: 'Meet the experienced faculty team guiding students at Apexiums School.',
 };
 
 export default function FacultyPage() {

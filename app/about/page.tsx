@@ -1,117 +1,70 @@
-
-'use client';
-
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import gsap from 'gsap';
+import PageIntro from '@/app/components/common/page-intro';
+import { FACULTY_MEMBERS } from '@/app/lib/school-data';
 
-export default function HeroSection() {
-  const heroRef = useRef<HTMLDivElement>(null);
+export const metadata: Metadata = {
+  title: 'About Us | Kids School',
+  description: 'Learn about Kids School mission, vision, leadership, and principal message.',
+};
 
-  useEffect(() => {
-    if (!heroRef.current) return;
-
-    const ctx = gsap.context(() => {
-      // Stagger text animation
-      gsap.from('.hero-text', {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        stagger: 0.15,
-      });
-
-      // Hero image float animation
-      gsap.to('.hero-image', {
-        y: -20,
-        rotation: 1.5,
-        duration: 4,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-      });
-
-      // Decorative shapes animation
-      gsap.to('.shape', {
-        y: 20,
-        rotation: 15,
-        duration: 6,
-        ease: 'sine.inOut',
-        yoyo: true,
-        repeat: -1,
-      });
-    }, heroRef);
-
-    return () => ctx.revert();
-  }, []);
-
+export default function AboutPage() {
   return (
-    <section ref={heroRef} className="relative overflow-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid items-center gap-16 md:grid-cols-2">
+    <div>
+      <PageIntro
+        eyebrow="About Us"
+        title="A school focused on academic excellence and character"
+        description="Kids School combines modern teaching methods, disciplined learning habits, and student wellbeing support to help each child grow with confidence."
+      />
 
-          {/* Hero Image with Animated Shapes */}
-          <div className="relative flex justify-center order-1 md:order-2">
-            <div className="absolute -z-10 flex gap-6">
-              <div className="shape h-[380px] w-[210px] rounded-[70px] bg-sky-500/90" />
-              <div className="shape h-[380px] w-[210px] rounded-[70px] bg-orange-400/90" />
-            </div>
+      <section className="page-wrap section-grid pb-14 lg:grid-cols-2">
+        <article className="surface-soft p-8">
+          <h2 className="text-2xl font-bold">Mission</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            To nurture curious, responsible, and compassionate learners through engaging instruction, ethical guidance,
+            and a strong partnership with families.
+          </p>
+        </article>
 
-            <Image
-              src="/assets/hero-kids.png"
-              alt="Happy student"
-              width={340}
-              height={460}
-              priority
-              className="hero-image rounded-xl object-contain"
-            />
-          </div>
+        <article className="surface-soft p-8">
+          <h2 className="text-2xl font-bold">Vision</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            To become a leading institution where students build knowledge, values, and leadership qualities for higher
+            education and meaningful citizenship.
+          </p>
+        </article>
+      </section>
 
-          {/* Hero Text */}
-          <div className="order-2 md:order-1">
-            <span className="hero-text inline-block rounded-full bg-sky-100 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600">
-              Kids Education
-            </span>
+      <section className="page-wrap pb-14">
+        <article className="rounded-2xl bg-[#0c2237] p-8 text-white shadow-lg">
+          <h2 className="text-2xl font-bold text-white">Principal&apos;s Message</h2>
+          <p className="mt-4 max-w-4xl text-sm leading-relaxed text-white/90">
+            Every child has unique potential. At Kids School, we create a learning environment where students feel safe,
+            respected, and motivated to do their best. We continuously invest in teacher development, technology-enabled
+            classrooms, and student support programs to ensure meaningful outcomes.
+          </p>
+          <p className="mt-5 text-sm font-semibold text-white">- Dr. Nusrat Ahmed, Principal</p>
+        </article>
+      </section>
 
-            <h1 className="hero-text mt-6 text-4xl font-extrabold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-              Empowering <span className="text-orange-500">students</span> from early age
-              <br />
-              towards <span className="text-sky-500">bright vision</span>
-            </h1>
-
-            <p className="hero-text mt-6 max-w-xl text-base leading-relaxed text-neutral-600">
-              We nurture curiosity, confidence, creativity, and compassion to help
-              children grow into responsible, innovative, and happy learners in a
-              diverse world.
-            </p>
-
-            <div className="mt-10 flex flex-wrap items-center gap-4 hero-text">
-              <Link href="/admission">
-                <button className="rounded-full bg-orange-500 px-8 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-orange-600 hover:shadow-lg hover:scale-105">
-                  Enroll Now
-                </button>
-              </Link>
-
-              <Link
-                href="/about"
-                className="
-                  rounded-full border border-orange-500
-                  px-6 py-2
-                  text-sm font-semibold text-orange-500
-                  transition-colors duration-200
-                  hover:bg-orange-500 hover:text-white
-                  hover:scale-105
-                  focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500
-                "
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-
+      <section className="page-wrap pb-20">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <h2 className="text-2xl font-bold">Leadership Team</h2>
+          <Link href="/faculty" className="btn btn-secondary">
+            View Full Faculty
+          </Link>
         </div>
-      </div>
-    </section>
+
+        <div className="section-grid sm:grid-cols-2 lg:grid-cols-3">
+          {FACULTY_MEMBERS.slice(0, 3).map((member) => (
+            <article key={member.name} className="surface-card p-5">
+              <h3 className="font-semibold">{member.name}</h3>
+              <p className="mt-1 text-sm font-semibold text-teal-700">{member.role}</p>
+              <p className="mt-1 text-sm text-neutral-600">{member.subject}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

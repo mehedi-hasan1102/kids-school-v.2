@@ -1,35 +1,38 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/common/nav";
-import Footer from "./components/common/footer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next';
+import './globals.css';
+import Navbar from './components/common/nav';
+import Footer from './components/common/footer';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const metadata: Metadata = {
-  title: "Kids School",
-  description: "Developed by Mehedi Hasan",
+  title: 'Kids School | Official Website',
+  description:
+    'Kids School public website and multi-role dashboards for students, teachers, and admin.',
+  metadataBase: new URL('https://kidsschool.edu'),
+  openGraph: {
+    title: 'Kids School | Official Website',
+    description:
+      'Official website for Kids School with admissions, academics, events, and role-based portals.',
+    type: 'website',
+    url: 'https://kidsschool.edu',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kids School',
+    description:
+      'Student-first school website with admissions, events, and secure role-based dashboards.',
+  },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased min-h-screen flex flex-col" suppressHydrationWarning>
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

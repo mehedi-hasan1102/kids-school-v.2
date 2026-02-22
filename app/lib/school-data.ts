@@ -7,7 +7,7 @@ export const HERO_SLIDES = [
       "Enroll now for Playgroup to Grade 10. Limited seats available for science and language tracks.",
     ctaLabel: "Start Application",
     ctaHref: "/admission",
-    image: "/assets/hero-kids.png",
+    image: "/assets/panchkula-1.webp",
     theme: "from-cyan-500 to-blue-500",
   },
   {
@@ -18,7 +18,7 @@ export const HERO_SLIDES = [
       "Join us on March 15, 2026 for project showcases, performances, and inter-school collaboration.",
     ctaLabel: "View Events",
     ctaHref: "/events",
-    image: "/assets/story-1.png",
+    image: "/assets/Pasted image.png",
     theme: "from-amber-500 to-orange-500",
   },
   {
@@ -29,7 +29,7 @@ export const HERO_SLIDES = [
       "Merit scholarships are available for top-performing students from Grades 6 to 10.",
     ctaLabel: "Read Message",
     ctaHref: "/about",
-    image: "/assets/story-2.png",
+    image: "/assets/GraduateSchoolAdmissionsServicesShemmassian.jpg",
     theme: "from-emerald-500 to-teal-500",
   },
   {
@@ -40,7 +40,7 @@ export const HERO_SLIDES = [
       "Interactive screens and modern STEM kits are now available across all middle and high school classes.",
     ctaLabel: "Explore Academics",
     ctaHref: "/academics",
-    image: "/assets/story-3.png",
+    image: "/assets/smart-classroom-2000x1125.webp",
     theme: "from-rose-500 to-pink-500",
   },
 ];

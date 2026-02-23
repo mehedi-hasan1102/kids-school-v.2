@@ -9,11 +9,11 @@ import { clearAuthSession, getRoleDashboard, useAuthUser } from '@/app/lib/auth-
 
 const LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
+  
   { href: '/academics', label: 'Academics' },
   { href: '/admission', label: 'Admissions' },
   { href: '/faculty', label: 'Faculty' },
-  { href: '/events', label: 'Events/News' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ];
 

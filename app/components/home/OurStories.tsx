@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import gsap from 'gsap';
 
 type Story = {
   id: number;
@@ -59,32 +57,10 @@ const stories: Story[] = [
 export default function OurStories() {
   const featured = stories.find((s) => s.featured);
   const rest = stories.filter((s) => !s.featured);
-  const bgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!bgRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.to(bgRef.current, {
-        y: 28,
-        duration: 6,
-        ease: 'sine.inOut',
-        repeat: -1,
-        yoyo: true,
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   return (
-    <section className="relative overflow-hidden py-20">
-      <div
-        ref={bgRef}
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-50 via-white to-emerald-50 opacity-90"
-      />
-
-      <div className="page-wrap relative z-10">
+    <section className="bg-slate-50 py-20">
+      <div className="page-wrap">
         <div className="mb-10 flex flex-col gap-5 border-b border-slate-200 pb-8 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow">Campus Life</p>

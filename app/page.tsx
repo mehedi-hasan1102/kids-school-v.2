@@ -23,7 +23,7 @@ export default function Home() {
   const featuredEvents = EVENTS_NEWS.slice(0, 3);
 
   return (
-    <div>
+    <div className="bg-slate-50">
       <AnnouncementMarquee />
       <HeroSection />
 

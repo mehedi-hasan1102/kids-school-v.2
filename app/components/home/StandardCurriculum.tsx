@@ -93,10 +93,8 @@ export default function StandardCurriculum() {
   };
 
   return (
-    <section className="relative py-20">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50/80 via-white to-cyan-50/70" />
-
-      <div className="page-wrap relative max-w-6xl">
+    <section className="bg-slate-50 py-20">
+      <div className="page-wrap max-w-6xl">
         <div className="curriculum-heading mb-10 flex flex-col gap-5 border-b border-slate-200 pb-8 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow">Academic Pathway</p>

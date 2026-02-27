@@ -4,13 +4,28 @@ import AnnouncementMarquee from './components/home/AnnouncementMarquee';
 import HeroSection from './components/home/HeroSection';
 import StandardCurriculum from './components/home/StandardCurriculum';
 import OurStories from './components/home/OurStories';
-import { EVENTS_NEWS, FEE_STRUCTURE, FACULTY_MEMBERS } from '@/app/lib/school-data';
+import { EVENTS_NEWS, FACULTY_MEMBERS } from '@/app/lib/school-data';
 
 const KEY_STATS = [
   { label: 'Students', value: '1,240+' },
   { label: 'Teachers', value: '86' },
   { label: 'Clubs & Activities', value: '22' },
   { label: 'Board Success Rate', value: '98%' },
+];
+
+const STUDENT_SUPPORT_HIGHLIGHTS = [
+  {
+    title: 'Enrollment Guidance',
+    detail: 'Step-by-step support during admission and placement.',
+  },
+  {
+    title: 'Family Orientation',
+    detail: 'Clear overview of school routines, rules, and communication.',
+  },
+  {
+    title: 'Transition Follow-up',
+    detail: 'Early teacher and mentor check-ins after joining.',
+  },
 ];
 
 export const metadata: Metadata = {
@@ -75,13 +90,16 @@ export default function Home() {
           </article>
 
           <article className="surface-card p-6">
-            <p className="eyebrow">Fee Snapshot</p>
-            <h3 className="mt-2 text-xl font-bold">Transparent and structured</h3>
-            <ul className="mt-4 space-y-2 text-sm text-neutral-600">
-              {FEE_STRUCTURE.slice(0, 3).map((fee) => (
-                <li key={fee.category} className="flex items-center justify-between gap-3 rounded-lg bg-slate-50 px-3 py-2">
-                  <span>{fee.category}</span>
-                  <span className="font-semibold text-neutral-900">{fee.amount}</span>
+            <p className="eyebrow">Admission Support</p>
+            <h3 className="mt-2 text-xl font-bold">Guided start for every new student</h3>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+              Structured support from enrollment to classroom adjustment.
+            </p>
+            <ul className="mt-5 space-y-3">
+              {STUDENT_SUPPORT_HIGHLIGHTS.map((item) => (
+                <li key={item.title} className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3">
+                  <p className="text-sm font-semibold text-neutral-900">{item.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">{item.detail}</p>
                 </li>
               ))}
             </ul>

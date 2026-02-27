@@ -37,7 +37,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-
+{/* 
       <section className="page-wrap section-grid pb-10 lg:grid-cols-3">
         <article className="surface-card p-6">
           <p className="eyebrow">School Mission</p>
@@ -74,7 +74,7 @@ export default function Home() {
             ))}
           </ul>
         </article>
-      </section>
+      </section> */}
 
       <StandardCurriculum />
 

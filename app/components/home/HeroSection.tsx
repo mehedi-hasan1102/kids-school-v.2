@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="relative isolate min-h-[calc(100svh-110px)] w-full overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/Pasted image.png"
+            src="/assets/pexels-pixabay-267885.jpg"
             alt="Students in classroom"
             fill
             sizes="100vw"
@@ -19,8 +19,8 @@ export default function HeroSection() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-indigo-950/55 to-indigo-900/75" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(99,102,241,0.35),transparent_45%),radial-gradient(circle_at_85%_10%,rgba(14,165,233,0.25),transparent_38%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/20 via-blue-900/35 to-slate-950/70" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(125,211,252,0.22),transparent_42%),radial-gradient(circle_at_82%_14%,rgba(191,219,254,0.18),transparent_40%)]" />
 
         <article className="relative z-10 mx-auto flex min-h-[calc(100svh-110px)] max-w-5xl flex-col items-center justify-center px-5 py-14 text-center text-white sm:px-8">
           <div className="rounded-3xl bg-white/90 p-3 shadow-lg backdrop-blur">

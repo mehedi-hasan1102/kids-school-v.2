@@ -46,10 +46,9 @@ export const HERO_SLIDES = [
 ];
 
 export const ANNOUNCEMENTS = [
-  "Orientation for new students: March 5, 2026 at 10:00 AM",
-  "Mid-term examination starts: April 7, 2026",
-  "Teacher-parent consultation week: April 20 to April 24, 2026",
   "Scholarship interview list published on the admissions page",
+  "Orientation for new students: March 5, 2026 at 10:00 AM",
+  "Mid-term preparation support is now open for all students",
 ];
 
 export const ACADEMIC_PROGRAMS = [

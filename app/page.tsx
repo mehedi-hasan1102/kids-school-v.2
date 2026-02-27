@@ -91,7 +91,7 @@ export default function Home() {
       <StandardCurriculum />
 
       <section className="page-wrap py-14">
-        <div className="mb-8 flex items-center justify-between gap-3">
+        <div className="mb-8 flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow">Events</p>
             <h2 className="text-3xl font-bold">Upcoming Events and Notices</h2>
